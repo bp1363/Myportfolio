@@ -1,0 +1,105 @@
+.about {
+  background: linear-gradient(135deg, #1a1a1a, #0f2027);
+  color: #ffffff;
+  padding: 5rem 2rem;
+  transition: all 0.3s ease;
+}
+
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+h2 {
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+  color: #00bcd4;
+}
+
+p {
+  font-size: 1.2rem;
+  line-height: 1.8;
+  margin-bottom: 2.5rem;
+  color: #dddddd;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+h3 {
+  font-size: 2.2rem;
+  font-weight: 600;
+  margin-bottom: 2rem;
+  color: #ffffff;
+  border-bottom: 2px solid #00bcd4;
+  display: inline-block;
+  padding-bottom: 0.5rem;
+}
+
+.skillGroups {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.skillGroup {
+  flex: 1 1 300px;
+  background: rgba(255, 255, 255, 0.05);
+  padding: 1.8rem;
+  border-radius: 12px;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  text-align: left;
+}
+
+.skillGroup:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.4);
+}
+
+.skillGroup h4 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  color: #00bcd4;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  padding-bottom: 0.5rem;
+}
+
+.skillGroup ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.skillGroup li {
+  margin-bottom: 0.6rem;
+  font-size: 1.05rem;
+  color: #f0f0f0;
+  position: relative;
+  padding-left: 1.2rem;
+}
+
+.skillGroup li::before {
+  content: '✓';
+  position: absolute;
+  left: 0;
+  color: #00bcd4;
+  font-weight: bold;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .skillGroups {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .skillGroup {
+    width: 100%;
+  }
+}

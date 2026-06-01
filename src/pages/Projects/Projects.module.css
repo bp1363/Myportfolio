@@ -1,0 +1,69 @@
+.projects {
+  background-color: #121212;
+  color: #fff;
+  padding: 4rem 2rem;
+  text-align: center;
+}
+
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+h2 {
+  font-size: 2.5rem;
+  color: #00bcd4;
+  margin-bottom: 2rem;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+}
+
+.card {
+  background-color: #1e1e1e;
+  border-radius: 12px;
+  padding: 2rem;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.card h3 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  color: #ffffff;
+}
+
+.card p {
+  flex-grow: 1;
+  color: #cccccc;
+  font-size: 1rem;
+  line-height: 1.6;
+  margin-bottom: 1.5rem;
+}
+
+.card a {
+  align-self: flex-start;
+  background-color: #00bcd4;
+  color: #000;
+  padding: 0.6rem 1.2rem;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.card a:hover {
+  background-color: #0190a4;
+}
+
+.card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 8px 20px rgba(0, 188, 212, 0.3);
+}
