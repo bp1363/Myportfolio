@@ -76,8 +76,8 @@ color: var(--text);
 }
 
 .logo img {
-  height: 55px;
-  width: auto;
+  width: 60px;
+  height: 60px;
   object-fit: contain;
   transition: transform 0.3s ease;
   height: 65px;

@@ -193,8 +193,8 @@
 .roleText {
   font-family: 'Space Grotesk', sans-serif;
   font-size: 1.15rem;
-  font-weight: 500;
-  color: var(--muted);
+  color: var(--lavender);
+  font-weight: 600;
 }
 
 .cursor {
@@ -312,7 +312,7 @@
   border: 1px solid var(--border);
   padding: 1rem 1.25rem;
   border-radius: 12px;
-  min-width: 120px;
+  min-width: 150px;
 }
 
 .statCard h3 {
@@ -326,7 +326,9 @@
   color: var(--muted);
   font-size: 0.85rem;
 }
-
+.statusBadge {
+  margin-top: 22px;
+}
 /* ─── Responsive ────────────────────────────────────────────── */
 @media (max-width: 768px) {
   .container {
@@ -357,14 +359,14 @@
     padding: 3rem 1.25rem;
   }
 
-  .profileWrapper {
-    width: 160px;
-    height: 160px;
-  }
-
   .glowRing {
-    width: 184px;
-    height: 184px;
+    width: 215px;
+    height: 215px;
+  }
+  
+  .profileWrapper {
+    width: 200px;
+    height: 200px;
   }
 
   .name {
