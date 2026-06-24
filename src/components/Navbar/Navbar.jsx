@@ -101,7 +101,7 @@ const Navbar = () => {
         </button>
 
         {/* Desktop links */}
-        <ul className={styles.links} role="list">
+        <ul className={styles.links}>
           {NAV_ITEMS.map(({ label, id }) => (
             <li key={id}>
               <button
@@ -145,7 +145,7 @@ const Navbar = () => {
         className={`${styles.mobileNav} ${isOpen ? styles.mobileNavOpen : ""}`}
         aria-hidden={!isOpen}
       >
-        <ul role="list" className={styles.mobileLinks}>
+        <ul className={styles.mobileLinks}>
           {NAV_ITEMS.map(({ label, id }) => (
             <li key={id}>
               <button
