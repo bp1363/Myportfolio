@@ -1,0 +1,123 @@
+.experience {
+    background: #0A0E1A;
+    padding: 6rem 2rem;
+    }
+    
+    .container {
+    max-width: 1100px;
+    margin: 0 auto;
+    }
+    
+    .sectionHeader {
+    text-align: center;
+    margin-bottom: 4rem;
+    }
+    
+    .badge {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    border-radius: 999px;
+    background: rgba(124, 58, 237, 0.12);
+    border: 1px solid rgba(124, 58, 237, 0.22);
+    color: #C4B5FD;
+    margin-bottom: 1rem;
+    }
+    
+    .sectionHeader h2 {
+    color: #F0EFFF;
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    }
+    
+    .sectionHeader p {
+    color: #8B8FAE;
+    max-width: 650px;
+    margin: 0 auto;
+    }
+    
+    .timeline {
+    position: relative;
+    padding-left: 2rem;
+    }
+    
+    .timeline::before {
+    content: '';
+    position: absolute;
+    left: 12px;
+    top: 0;
+    width: 2px;
+    height: 100%;
+    background: #7C3AED;
+    }
+    
+    .timelineItem {
+    position: relative;
+    margin-bottom: 3rem;
+    }
+    
+    .timelineDot {
+    position: absolute;
+    left: -2rem;
+    top: 8px;
+    
+    width: 16px;
+    height: 16px;
+    
+    border-radius: 50%;
+    
+    background: #9F67FA;
+    
+    box-shadow:
+    0 0 0 6px rgba(124, 58, 237, 0.15);
+    }
+    
+    .timelineContent {
+    background: rgba(255,255,255,0.04);
+    border: 1px solid rgba(124,58,237,0.2);
+    padding: 2rem;
+    border-radius: 18px;
+    backdrop-filter: blur(10px);
+    transition: all 0.3s ease;
+    }
+    
+    .timelineContent:hover {
+    transform: translateY(-5px);
+    border-color: #9F67FA;
+    }
+    
+    .date {
+    color: #C4B5FD;
+    font-size: 0.9rem;
+    font-weight: 500;
+    }
+    
+    .timelineContent h3 {
+    color: #F0EFFF;
+    margin-top: 0.8rem;
+    margin-bottom: 0.3rem;
+    }
+    
+    .timelineContent h4 {
+    color: #9F67FA;
+    margin-bottom: 1rem;
+    }
+    
+    .timelineContent p {
+    color: #8B8FAE;
+    line-height: 1.8;
+    }
+    
+    @media (max-width: 768px) {
+    .sectionHeader h2 {
+    font-size: 2.2rem;
+    }
+    
+    .timeline {
+    padding-left: 1.5rem;
+    }
+    
+    .timelineDot {
+    left: -1.5rem;
+    }
+    }
+    

@@ -1,49 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500&display=swap');
+
+:root {
+--navy: #0A0E1A;
+--violet: #7C3AED;
+--violet2: #9F67FA;
+--lavender: #C4B5FD;
+--text: #F0EFFF;
+--muted: #8B8FAE;
+--border: rgba(124, 58, 237, 0.22);
+--glass: rgba(255, 255, 255, 0.04);
+}
+
 .contact {
-    background-color: #121212;
-    color: #fff;
-    padding: 4rem 2rem;
-    text-align: center;
-  }
-  
-  .container {
-    max-width: 600px;
-    margin: 0 auto;
-  }
-  
-  h2 {
-    font-size: 2.5rem;
-    margin-bottom: 2rem;
-    color: #00bcd4;
-  }
-  
-  .form {
-    display: flex;
-    flex-direction: column;
-    gap: 1.2rem;
-  }
-  
-  input,
-  textarea {
-    padding: 0.9rem;
-    border: none;
-    border-radius: 6px;
-    background-color: #1f1f1f;
-    color: #fff;
-    font-size: 1rem;
-  }
-  
-  button {
-    padding: 0.9rem;
-    background-color: #00bcd4;
-    color: #000;
-    border: none;
-    border-radius: 6px;
-    font-weight: bold;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-  }
-  
-  button:hover {
-    background-color: #0190a4;
-  }
-  
+background: var(--navy);
+padding: 6rem 2rem 3rem;
+}
+
+.container {
+max-width: 1200px;
+margin: 0 auto;
+}
+
+.sectionHeader {
+text-align: center;
+margin-bottom: 4rem;
+}
+
+.badge {
+display: inline-block;
+padding: 0.5rem 1rem;
+border-radius: 999px;
+background: rgba(124, 58, 237, 0.12);
+border: 1px solid var(--border);
+color: var(--lavender);
+font-size: 0.85rem;
+margin-bottom: 1rem;
+}
+
+.sectionHeader h2 {
+font-family: 'Space Grotesk', sans-serif;
+font-size: clamp(2rem, 4vw, 3rem);
+color: var(--text);
+margin-bottom: 1rem;
+}
+
+.sectionHeader p {
+max-width: 700px;
+margin: 0 auto;
+color: var(--muted);
+line-height: 1.8;
+}
+
+.contactGrid {
+display: grid;
+grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+gap: 1.5rem;
+}
+
+.contactCard {
+background: var(--glass);
+border: 1px solid var(--border);
+border-radius: 18px;
+padding: 2rem;
+text-decoration: none;
+color: var(--text);
+text-align: center;
+transition: all 0.3s ease;
+}
+
+.contactCard:hover {
+transform: translateY(-8px);
+border-color: var(--violet2);
+box-shadow: 0 12px 30px rgba(124, 58, 237, 0.15);
+}
+
+.contactCard svg {
+font-size: 2rem;
+color: var(--lavender);
+margin-bottom: 1rem;
+}
+
+.contactCard h3 {
+margin-bottom: 0.5rem;
+font-family: 'Space Grotesk', sans-serif;
+}
+
+.contactCard span {
+color: var(--muted);
+font-size: 0.95rem;
+}
+
+.footer {
+margin-top: 4rem;
+text-align: center;
+border-top: 1px solid var(--border);
+padding-top: 2rem;
+}
+
+.footer p {
+color: var(--muted);
+font-size: 0.9rem;
+}
+
+@media (max-width: 768px) {
+.contact {
+padding: 5rem 1.5rem 3rem;
+}
+
+.sectionHeader {
+margin-bottom: 3rem;
+}
+}
