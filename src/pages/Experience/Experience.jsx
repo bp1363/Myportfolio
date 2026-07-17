@@ -16,7 +16,6 @@ const Experience = () => {
             and AI/LLM-based projects.{" "}
           </p>{" "}
         </div>
-        ```
         <div className={styles.timeline}>
           <div className={styles.timelineItem}>
             <div className={styles.timelineDot}></div>
@@ -27,13 +26,11 @@ const Experience = () => {
               <h3>Analyst – AI/LLM Practice</h3>
 
               <h4>Innodata India Pvt. Ltd.</h4>
-              
+
               <p>Evaluated AI/LLM model responses</p>
               <p>Performed quality assurance reviews</p>
               <p>Worked on large-scale annotation projects</p>
               <p>Improved output accuracy through guideline-based validation</p>
-
-              
             </div>
           </div>
 
@@ -47,8 +44,7 @@ const Experience = () => {
 
               <h4>ScreenX – AI Powered HR Dashboard</h4>
 
-              <p>Built HR analytics dashboard
-              </p>
+              <p>Built HR analytics dashboard</p>
               <p> Resume screening management</p>
               <p> Candidate tracking & filtering</p>
               <p>React + TypeScript + Tailwind CSS</p>
